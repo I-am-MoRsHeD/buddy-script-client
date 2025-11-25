@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ChevronDown, Search } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Search } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { getIconComponent } from "@/lib/icon-mapper";
@@ -58,17 +57,6 @@ const Navbar = () => {
                             </Link>
                         );
                     })}
-
-
-                    {/* User Profile */}
-                    {/* <div className="flex items-center gap-2 cursor-pointer w-40">
-                        <Avatar className="w-8 h-8">
-                            <AvatarImage src="/images/user.jpg" />
-                            <AvatarFallback>DF</AvatarFallback>
-                        </Avatar>
-                        <span className="font-medium text-gray-800">Dylan Field</span>
-                        <ChevronDown className="w-4 h-4 text-gray-600" />
-                    </div> */}
                     <UserDropdown />
                 </div>
             </nav>

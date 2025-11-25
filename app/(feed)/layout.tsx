@@ -7,7 +7,7 @@ interface FeedLayoutProps {
 
 const FeedLayout = ({ children }: FeedLayoutProps) => {
     return (
-        <div>
+        <div className="bg-muted/80 min-h-screen">
             <Navbar />
             {children}
         </div>
